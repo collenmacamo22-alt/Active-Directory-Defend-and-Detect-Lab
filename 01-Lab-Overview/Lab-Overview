@@ -1,0 +1,38 @@
+# Lab Overview
+
+## Purpose
+
+This project demonstrates how Active Directory environments can be monitored and defended against common attack techniques.
+
+The focus of this project is not Active Directory administration, but rather the role of a SOC analyst responsible for detecting suspicious authentication activity, identifying attack patterns, and responding to security incidents.
+
+---
+
+## Lab Objectives
+
+- Understand how Active Directory authentication works.
+- Identify common attack techniques targeting Active Directory.
+- Learn which Windows Event IDs are useful during investigations.
+- Design practical detection logic for enterprise environments.
+- Practice incident response decision making.
+
+---
+
+## Technologies
+
+- Windows Active Directory
+- Windows Event Logs
+- Sigma Rules
+- MITRE ATT&CK
+- Microsoft Security Logging
+
+---
+
+## Skills Demonstrated
+
+- Windows Authentication Analysis
+- Security Monitoring
+- Detection Engineering
+- Incident Response
+- Threat Detection
+- Event Correlation
