@@ -1,30 +1,39 @@
-# References
+# Lessons Learned
 
-## Microsoft
+## Technical Lessons
 
-- Microsoft Learn
-- Windows Security Auditing Documentation
-- Microsoft Security Baselines
+Throughout this project, several important Active Directory security concepts were reinforced.
 
----
+Authentication events should never be evaluated individually. Correlating multiple Windows Security Events provides significantly more context and improves detection accuracy.
 
-## MITRE ATT&CK
+Privilege assignment events become meaningful when analyzed together with authentication activity and process execution.
 
-- MITRE ATT&CK Enterprise Framework
-- ATT&CK Technique T1110.003 – Password Spraying
-- ATT&CK Technique T1068 – Exploitation for Privilege Escalation
+Successful security monitoring relies not only on collecting logs but also on ensuring that the correct auditing policies are enabled.
 
 ---
 
-## Sigma
+## Detection Lessons
 
-- Sigma Rule Specification
-- SigmaHQ Detection Rules
+Effective detection requires understanding attacker behavior rather than relying solely on individual Event IDs.
+
+Password spraying, privilege escalation, and lateral movement each generate different event patterns that become much more valuable when correlated together.
+
+Behavior-based detections are generally more reliable than detections based on single events.
 
 ---
 
-## Industry Resources
+## Incident Response Lessons
 
-- CompTIA Security+ (SY0-701) Objectives
-- Google Cybersecurity Professional Certificate
-- NIST Cybersecurity Framework
+Rapid containment reduces the likelihood of privilege escalation and lateral movement.
+
+Evidence should always be preserved before making major changes to affected systems.
+
+Incident response should follow a structured process including identification, containment, eradication, recovery, and post-incident review.
+
+---
+
+## Personal Reflection
+
+This project strengthened my understanding of Active Directory security monitoring, Windows Event analysis, detection engineering, and incident response.
+
+It also reinforced the importance of documenting investigations clearly so that security teams can quickly understand the nature of an incident and respond effectively.
